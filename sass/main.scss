@@ -1,0 +1,21 @@
+// BASE
+@import './base/common';
+@import './base/visually-hidden';
+@import './base/variables';
+@import './base/components';
+
+// header
+@import './header/header';
+
+// main
+@import './main/about';
+@import './main/master-chef';
+@import './main/contact-form';
+@import './main/specialties';
+@import './main/menu';
+@import './main/events';
+@import './main/feedback';
+
+
+// footer
+@import './footer/footer';
