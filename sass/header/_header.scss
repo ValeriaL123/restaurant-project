@@ -106,9 +106,21 @@
   content: '';
   display: block;
   width: 60px;
-  height: 6px;
-  color: $accent-color;
-  
+  height: 4px;
+  background-color: $social-link-accent-color;
+  border-radius: 58px;
   position: absolute;
-  top: 43px;
+  top: 75px;
+}
+
+// social-link
+.hero-social__link{
+  display: block;
+  padding: 10px;
+  border-radius: 50%;
+  border:1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-social__icon{
+  display: block;
 }

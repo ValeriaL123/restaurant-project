@@ -166,10 +166,22 @@ body {
   content: '';
   display: block;
   width: 60px;
-  height: 6px;
-  color: #E8C300;
+  height: 4px;
+  background-color: #BE5F37;
+  border-radius: 58px;
   position: absolute;
-  top: 43px;
+  top: 75px;
+}
+
+.hero-social__link {
+  display: block;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-social__icon {
+  display: block;
 }
 
 .list {
