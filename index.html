@@ -4,9 +4,109 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.min.css">
+
   <title>Hungry people</title>
 </head>
 <body>
   
+  <header class="header">
+  <div class="container">
+    <a href="../index.html" class="logo">
+    <svg class="header__icon" width="90px" height="90px">
+      <use href="./img/mobile/sprite.svg#logo"></use>
+    </svg></a>
+
+    <div class="menu-wrapper">
+       <button type="button" class="header__burger-menu">
+      <svg class="header__icon-burger-menu" width="40px" height="40px">
+        <use href="./img/mobile/sprite.svg#burger-menu"></use>
+      </svg>
+    </button>
+    </div>
+   
+<!--   
+    <ul>
+      <li>
+        <a href="">home</a>
+      </li>
+
+      <li>
+        <a href="">about</a>
+      </li>
+
+      <li>
+        <a href="">team</a>
+      </li>
+
+      <li>
+        <a href="">booking</a>
+      </li>
+
+      <li>
+        <a href="">menu</a>
+      </li>
+
+      <li>
+        <a href="">gallery</a>
+      </li>
+
+      <li>
+        <a href="">events</a>
+      </li>
+
+      <li>
+        <a href="">contact</a>
+      </li>
+    </ul> -->
+  </div>
+
+</header>
+
+<!-- hero -->
+<main>
+  <section class="hero">
+  <div class="container">
+  <p class="hero__text"> restaurant</p>
+  <h1 class="hero__title">hungry people</h1>
+
+  <button type="button" class="hero__btn hero__btn--book">book table</button>
+
+  <button type="button" class="hero__btn hero__btn--explore">explore</button>
+
+  <ul class="hero-social">
+    <li class="hero-social__item">
+      <a href="" class="hero-social__link"> <svg weight="40" height="40">
+        <use href="../images/sprite.svg#facebook"></use>
+      </svg>
+    </a>
+    </li>
+
+    <li class="hero-social__item">
+      <a href="" class="hero-social__link"> <svg weight="40" height="40">
+        <use href="../images/sprite.svg#twitter"></use>
+      </svg>
+    </a>
+    </li>
+
+    <li class="hero-social__item">
+      <a href="" class="hero-social__link"> <svg weight="40" height="40">
+        <use href="../images/sprite.svg#instagram"></use>
+      </svg>
+    </a>
+    </li>
+  </ul>
+
+  <!-- <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+
+  <button type="button"></button> -->
+  </div>
+</section> 
+</main>
+
 </body>
 </html>
