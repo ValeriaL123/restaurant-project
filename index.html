@@ -16,53 +16,64 @@
   
   <header class="header">
   <div class="container">
-    <a href="../index.html" class="logo">
+
+    <div class="header__wrapper">
+      <a href="../index.html" class="logo">
     <svg class="header__icon" width="90px" height="90px">
       <use href="./img/mobile/sprite.svg#logo"></use>
-    </svg></a>
+    </svg>
+    </a>
 
-    <div class="menu-wrapper">
-       <button type="button" class="header__burger-menu">
-      <svg class="header__icon-burger-menu" width="40px" height="40px">
+    
+       <button type="button" class="header__burger-menu" data-menu-button>
+      <svg class="header__icon-burger-menu" width="40px" height="40px" aria-label="Переключатель мобильного меню">
         <use href="./img/mobile/sprite.svg#burger-menu"></use>
       </svg>
     </button>
     </div>
+    
+    <!-- menu-container -->
+<div class="menu-container" data-menu>
+  <button type="button" data-menu-close class="btn-close">
+    <svg class="menu-container__btn-close" width="20px" height="20px">
+      <use href="./img/mobile/sprite.svg#close-btn"></use>
+    </svg>
+  </button>
+  <ul class="menu-container__list">
+      <li class="menu-container__item">
+        <a href="" class="menu-container__link current-page">home</a>
+      </li>
+
+      <li class="menu-container__item">
+        <a href="" class="menu-container__link">about</a>
+      </li>
+
+      <li class="menu-container__item">
+        <a href="" class="menu-container__link">team</a>
+      </li>
+
+      <li class="menu-container__item">
+        <a href="" class="menu-container__link">booking</a>
+      </li>
+
+      <li class="menu-container__item">
+        <a href="" class="menu-container__link">menu</a>
+      </li>
+
+      <li class="menu-container__item">
+        <a href="" class="menu-container__link">gallery</a>
+      </li>
+
+      <li class="menu-container__item">
+        <a href="" class="menu-container__link">events</a>
+      </li>
+
+      <li class="menu-container__item">
+        <a href="" class="menu-container__link">contact</a>
+      </li>
+    </ul>
+</div>
    
-<!--   
-    <ul>
-      <li>
-        <a href="">home</a>
-      </li>
-
-      <li>
-        <a href="">about</a>
-      </li>
-
-      <li>
-        <a href="">team</a>
-      </li>
-
-      <li>
-        <a href="">booking</a>
-      </li>
-
-      <li>
-        <a href="">menu</a>
-      </li>
-
-      <li>
-        <a href="">gallery</a>
-      </li>
-
-      <li>
-        <a href="">events</a>
-      </li>
-
-      <li>
-        <a href="">contact</a>
-      </li>
-    </ul> -->
   </div>
 
 </header>
@@ -78,10 +89,11 @@
 
   <button type="button" class="hero__btn hero__btn--explore">explore</button>
 
+
   <ul class="hero-social">
     <li class="hero-social__item">
       <a href="" class="hero-social__link"> 
-        <svg weight="40px" height="40px" class="hero-social__icon">
+        <svg width="20px" height="20px" class="hero-social__icon">
         <use href="./img/mobile/sprite.svg#facebook"></use>
       </svg>
     </a>
@@ -89,27 +101,55 @@
 
     <li class="hero-social__item">
       <a href="" class="hero-social__link"> 
-        <svg weight="40px" height="40px" class="hero-social__icon">
-        <use href="./img/mobile/sprite.svg/#twitter"></use>
+        <svg width="20px" height="20px" class="hero-social__icon">
+        <use href="./img/mobile/sprite.svg#twitter"></use>
       </svg>
     </a>
     </li>
 
     <li class="hero-social__item">
       <a href="" class="hero-social__link">
-         <svg weight="40px" height="40px" class="hero-social__icon">
+         <svg width="20px" height="20px" class="hero-social__icon">
         <use href="./img/mobile/sprite.svg#instagram"></use>
       </svg>
     </a>
     </li>
   </ul>
 
-  <!-- <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
 
-  <button type="button"></button> -->
+  <p class="hero__schedule">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - <br> 3AM</p>
+
+  <button type="button" class="hero__btn-arrow">
+    <svg class="hero__btn-arrow__icon" width="20px" height="20px">
+      <use href="./img/mobile/sprite.svg#arrow"></use>
+    </svg>
+  </button>
   </div>
 </section> 
-</main>
 
+<!-- about -->
+
+<section class="about">
+  <div class="container">
+    <h2 class="about__title">about us</h2>
+    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. <br>
+  <span class="about__span">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</span>
+ </p>
+<div class="thumb__img thumb__img--pos">
+<picture>
+  <source srcset="./img/mobile/about-img@1x.webp 1x, ./img/mobile/about-img@2x.webp 2x" type="image/webp">
+  <source srcset="./img/mobile/about-img@1x.jpg 1x, ./img/mobile/about-img@2x.jpg 2x" type="image/jpeg">
+  <img src="./img/mobile/about-img@1x.jpg" alt="grill">
+</picture>
+
+</div>
+
+  
+  </div>
+
+
+</section>
+</main>
+<script src="./js/modal-menu.js"></script>
 </body>
 </html>
