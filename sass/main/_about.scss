@@ -31,17 +31,19 @@ font-family: $title-font;
   text-align: center;
   color: $title-black;
   margin-top: 20px;
-
+  margin-bottom: 44px;
 }
 .about__span{
   font-size: 14px;
   line-height: 1.7;
   font-weight: 400;
 }
-// rectangle
+.about__wrapper{
+  position: relative;
+}
+
 .thumb__img--pos::after{
   position: absolute;
-  top: 500px;
-  right: 35px;
-
+  right: 27px;
+  top: 229px;
 }
