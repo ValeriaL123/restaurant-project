@@ -35,7 +35,7 @@
     <!-- menu-container -->
 <div class="menu-container" data-menu>
   <button type="button" data-menu-close class="btn-close">
-    <svg class="menu-container__btn-close" width="20px" height="20px">
+    <svg class="close-btn-modal" width="20px" height="20px">
       <use href="./img/mobile/sprite.svg#close-btn"></use>
     </svg>
   </button>
@@ -159,20 +159,44 @@
     <p class="master-chef__span">
       Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
     </p>
-    <div class="thumb__img thumb__img__master--pos">
+   
+  </div>
+</section>
+ 
+<!-- specialities -->
+<section class="specialties">
+  <div class="thumb__img thumb__img__master--pos">
       <picture>
         <source srcset="./img/mobile/master-chef@1x.webp 1x, ./img/mobile/master-chef@2x.webp 2x">
         <source srcset="./img/mobile/master-chef@1x.jpg 1x,  ./img/mobile/master-chef@2x.jpg x">
         <img src="./img//mobile/master-chef@1x.jpg" alt="master-chef" class="master-chef__img">
       </picture>
     </div>
-  </div>
+
+<p class="specialties__subtitle">specialties</p>
+
+<div class="thumb__img thumb__img__specialties--pos">
+<img src="./img/mobile/slider-1@1x.jpg" alt="pancakes" class="specialties__img">
+</div>
+  
+<h2 class="specialties__title">chocolate <br> pancakes</h2>
+
+
+<p class="specialties__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+  <p class="specialties__span">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+
 </section>
 
 </main>
 
 <!-- <div class="backdrop" data-modal>
   <div class="modal">
+    <button type="button" class="modal__btn-form">
+      <sgv class="modal__btn-form__icon" width="18px" height="18px">
+        <use href="./img/mobile/sprite.svg#icon-close-black"></use>
+      </sgv>
+    </button>
+    
     <h2 class="modal__title">Book a table</h2>
 
     <form class="form">
