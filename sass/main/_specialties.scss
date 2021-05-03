@@ -4,20 +4,32 @@
   padding-bottom: 74px;
   padding-left: 14px;
   padding-right: 14px;
+  
+}
+// max-w 767
+@media screen and (max-width: 767px){
+.specialties{
   background-image: 
   linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
   url(../../img/mobile/specialty-bg@1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
-@media (min-device-pixel-ratio: 2),
+
+  @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .specialties{
-    background-image: url(../../img/mobile/specialty-bg@2x.jpg);
+    background-image: 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../img/mobile/specialty-bg@2x.jpg);
+    }
   }
 }
+
 
 .specialties__subtitle{
   font-weight: 700;
@@ -33,14 +45,14 @@
 
 .specialties__title{
   font-weight: 900;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
   color: #FFFFFF;
 
   position: absolute;
-  top: 161px;
-  right: 57px;
+  top: 18px;
+  left: 281px;
 }
 
 .specialties__img{
@@ -55,7 +67,6 @@ font-size: 18px;
 line-height: 1.55;
 text-align: center;
 color: rgba(255, 255, 255, 0.9);
-margin-top: 44px;
 margin-bottom: 28px;
 }
 
@@ -70,6 +81,59 @@ margin: 0 auto;
 
 .thumb__img__specialties--pos::after{
   position: absolute;
-  top: 187px;
-  left: 43px;
+ top: 45px;
+ left: 51px;
 }
+
+
+.wrapper-slider{
+  display: flex;
+}
+
+.specialties__img--first{
+  margin-right: 15px;
+}
+
+.slider {
+ z-index: 9;
+ width: 100%;
+ height: 290px;
+ overflow: hidden;
+ position: relative;
+ }
+ .slider ul,
+ .slider li {
+ padding: 0;
+ margin: 0;
+ list-style-type: none;
+ }
+ .slider ul {
+ width: 9999px; 
+ }
+ .slider ul li {
+ list-style-type: none;
+ float: left;
+ width: 700px;
+ height: 290px;
+ }
+ .slider .nav {
+ position: absolute;
+ left: 15px;
+ bottom: 70px; 
+ }
+ .slider .nav span {
+ opacity: 0.9;
+ background: #fff;
+ margin: 0 8px 0 0;
+ width: 16px;
+ height: 16px;
+ border-radius: 8px;
+ cursor: pointer;
+ overflow: hidden;
+ display: block;
+ float: left;
+ box-shadow: 0 1px 2px #000;
+ }
+ .slider .nav span.on {
+ background: $accent-color;
+ }
